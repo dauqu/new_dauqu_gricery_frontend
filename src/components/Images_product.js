@@ -74,8 +74,12 @@ export default function Images_product(props) {
               return (
                 <tr className="text-left text-[#272727] text-[14px] h-[45px]">
                   <td className="px-4 py-2 border">{val._id}</td>
-                  <td className="px-[2px] py-[2px] border w-[90px]">
-                    <img src={val.image} className="w-auto " alt="img" />
+                  <td className="px-[2px] py-[2px] border w-[90px] h-[90px]">
+                    <img
+                      src={val.image}
+                      className="w-[100%] h-[100%]  "
+                      alt="img"
+                    />
                   </td>
                   <td className="px-4 py-2 border text-[#008eff]">
                     {val.title}{" "}
