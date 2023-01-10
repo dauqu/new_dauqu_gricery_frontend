@@ -12,7 +12,6 @@ function Signin() {
   const [email, setEmail] = React.useState("user12345@gmail.com");
   const [password, setPassword] = React.useState("user12345");
   const [showPassword, setShowPassword] = React.useState(false);
-   
 
   // states for seller login
 
@@ -126,6 +125,14 @@ function Signin() {
                   Sign In
                 </button>
               )}
+            </div>
+            <div className="mt-6 flex justify-center items-center">
+              <p className="text-[18px] font-semibold">OR</p>
+            </div>
+            <div className="mt-6 flex justify-center items-center">
+              <div className="p-2 bg-[#38A15D] rounded-sm cursor-pointer">
+                <p className="text-[18px] text-white ">Download APK</p>
+              </div>
             </div>
           </form>
         </div>
