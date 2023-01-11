@@ -57,7 +57,10 @@ function Signin() {
   //       console.log("You are not logged in");
   //     });
   // }, []);
-
+  const relocate = () => {
+    window.location.href =
+      "https://raw.githubusercontent.com/dauqu/dauqu/main/app-release.apk";
+  };
   return (
     <div>
       <div className="w-[100vw] min-h-[100vh] flex items-center justify-center py-12">
@@ -130,7 +133,10 @@ function Signin() {
               <p className="text-[18px] font-semibold">OR</p>
             </div>
             <div className="mt-6 flex justify-center items-center">
-              <div className="p-2 bg-[#38A15D] rounded-sm cursor-pointer">
+              <div
+                className="p-2 bg-[#38A15D] rounded-sm cursor-pointer"
+                onClick={relocate}
+              >
                 <p className="text-[18px] text-white ">Download APK</p>
               </div>
             </div>
