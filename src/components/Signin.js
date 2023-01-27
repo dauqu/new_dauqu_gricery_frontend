@@ -44,19 +44,6 @@ function Signin() {
       });
   };
 
-  //CHeck if user is logged in
-  // React.useEffect(() => {
-  //   axios
-  //     .get(`${API}/api/login/isLoggedIn`)
-  //     .then((res) => {
-  //       if (res.data === true) {
-  //         navigate("/dashboard");
-  //       }
-  //     })
-  //     .catch((err) => {
-  //       console.log("You are not logged in");
-  //     });
-  // }, []);
   const relocate = () => {
     window.location.href =
       "https://raw.githubusercontent.com/dauqu/dauqu/main/app-release.apk";
@@ -74,11 +61,11 @@ function Signin() {
               </label>
               <input
                 type="text"
-                name={email}
+                placeholder="example@gmail.com"
                 className="border w-full h-[50px] outline-none px-3 placeholder:
               text-[#060C43] placeholder:text-[14px] placeholder:font-medium"
-                value="user12345@gmail.com"
-                // onChange={(e) => setEmail(e.target.value)}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
@@ -88,10 +75,10 @@ function Signin() {
               <div className="flex w-full h-[50px] border items-center px-3">
                 <input
                   type={showPassword ? "password" : "text"}
-                  name={password}
-                  value="user12345"
+                  value={password}
+                  placeholder="example#123"
                   className="w-full h-[48px] outline-none   placeholder:text-[#060C43] placeholder:text-[14px] placeholder:font-medium"
-                  // onChange={(e) => setPassword(e.target.value)}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 {showPassword ? (
                   <AiOutlineEye
